@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .skyblue-bg {
+            background-color: skyblue;
+        }
+
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+        }
+
+        p.fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #00c8eb;
+        }
+
+        #special {
+            background-color: skyblue;
+        }
+
+        a[href] {
+            color: blue;
+        }
+
+        a[href^="#"] {
+            background-color: gold;
+        }
+
+        a[href*="example"] {
+            background-color: silver;
+        }
+
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+
+        a[href$=".org"] {
+            color: red;
+        }
+
+        * {
+            color: green;
+        }
+
+        *[lang^=en] {
+            font-style: italic;
+        }
+
+        *.warning {
+            color: red;
+        }
+
+        *#content {
+            border: 1px solid blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p class="red">Paragraf dengan teks berwarna merah</p>
+    <p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+    <p class="fancy">Paragraf dengan gaya fancy</p>
+    <h1 class="fancy">Heading dengan gaya fancy</h1>
+    <p>Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan styling</p>
+    <h1 class="red">Heading dengan teks berwarna merah</h1>
+    <h1 class="red skyblue-bg">Heading dengan teks berwarna merah dan background biru langit</h1>
+    <p class="red fancy">Paragraf dengan teks berwarna merah dan bergaya fancy</p>
+    <hr>
+
+    <div id="special">
+        <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+    </div>
+    <div>
+        <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+    </div>
+    <hr>
+
+    <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">InSensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+    </ul>
+    <hr>
+
+    <p>Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka teks pada paragraf ini akan berwarna hijau</p>
+    <p lang="en-us">This is an English paragraph contains en-us value of lang attribute, so this text will be green and italic</p>
+    
+    <h1>Ini merupakan sebuah header biasa</h1>
+    <h1 lang="en-us">This is an English Header</h1>
+
+    <p class="warning">Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki kelas bernilai warning sehingga teks dari paragraf ini akan berwarna merah.</p>
+    <div id="content">
+        <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibugkus dalam border yang memiliki padding 20px.</p>
+    </div>
+</body>
+</html>
