@@ -64,6 +64,14 @@
             border: 1px solid blue;
             padding: 20px;
         }
+
+        img + p {
+            color: red;
+        }
+
+        img ~ p {
+            color: purple;
+        }
     </style>
 </head>
 <body>
@@ -103,5 +111,14 @@
     <div id="content">
         <p>Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai "content", seharusnya paragraf ini dibugkus dalam border yang memiliki padding 20px.</p>
     </div>
+    <hr>
+
+    <p>Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada elemen paragraf ini.</p>
+    <img src="../assets/image/Bandung_coa.png" alt="Bandung logo" width="400px">
+    <p>Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna merah.</p>
+    <div>
+        <p>Ini merupakan paragraf ketiga. Letaknya setelah elemen gambar, namun paragraf ini dibungkus di dalam div sehingga paragraf ini tidak akan menerapkanrule styling karena tidak memiliki induk yang sama</p>
+    </div>
+    <p>Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan menerapkan rule dengan menampilkan teks berwarna ungu</p>
 </body>
 </html>
